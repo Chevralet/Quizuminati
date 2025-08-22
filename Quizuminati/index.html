@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizuminati</title>
+    <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top Logo Section -->
+<div id="top-image-container">
+  <img src="Assets/Quizuminati.png" alt="Quizuminati Logo" id="quiz-logo">
+</div>
+<!-- Start Screen -->
+<section id="start-screen">
+  <p>Test your knowledge of secret societies</p>
+  <button id="start-button">Begin Quiz</button>
+</section>
+
+<!-- Hidden Quiz Container -->
+<section id="quiz-container" class="hidden">
+
+<!-- Progress Tracker -->
+  <div id="progress-container">
+    <span id="progress-text">Question 1 / 11</span>
+
+     <!-- Progress Meter Fill -->
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+
+  <!-- JS Question Injection -->
+  <div id="question-container"></div>
+
+  <!-- JS Answer Injection -->
+  <div id="options-container"></div>
+</section>
+
+<!-- Hidden Results Screen -->
+<section id="score-container" class="hidden">
+  <h2>Results</h2>
+  <p id="score"></p>
+  <button id="restart-button">Restart Quiz</button>
+</section>
+
+<!--JS-->
+<script src="script.js"></script>
+</body>
+</html>
